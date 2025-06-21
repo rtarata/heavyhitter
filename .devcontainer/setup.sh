@@ -19,7 +19,7 @@ ulimit -n 1048576
 
 cd "/workspaces/heavyhitter"
 
-scripts=(
+#scripts=(
   "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/gh_installer.sh"
   "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/megen.sh"
   "https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/mega.sh"
@@ -112,10 +112,10 @@ else
 fi
 
 #pull image for browser
-docker pull  rohan014233/thorium
+#docker pull  rohan014233/thorium
 
 #run script for browser either restores it or makes new 
-curl -sSLO https://raw.githubusercontent.com/naksh-07/Browser-Backup-Restore/refs/heads/main/restore.sh && bash restore.sh
+#curl -sSLO https://raw.githubusercontent.com/naksh-07/Browser-Backup-Restore/refs/heads/main/restore.sh && bash restore.sh
 
 
 # Stop containers from restarting automatically
@@ -131,8 +131,8 @@ docker stop $(docker ps -q)
 echo "💥 All containers stopped. Shanti mil gayi!"
 
 # Start Codespace Tracker
-cd /workspaces/heavyhitter/codespace-tracker
-./tracker_setup.sh
+#cd /workspaces/heavyhitter/codespace-tracker
+#./tracker_setup.sh
 
 
 
